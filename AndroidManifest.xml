@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techFist.sellMyStuff"
+    android:versionCode="2"
+    android:versionName="2.0" 
+    >
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name=
+    "android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"/> 
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.techFist.sellMyStuff.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.techFist.sellMyStuff.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive message -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme"
+        android:debuggable="true"
+        android:finishOnTaskLaunch="true"
+    >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+
+        <activity
+            android:label="@string/app_name"
+            android:name= ".SettingsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance">
+            
+        </activity>  
+        <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.MapManager.BusinessMap" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SellMainForm"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SellStartForm"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable"
+             android:value="com.techFist.sellMyStuff.LocationProvider.SearchActivity" />
+        </activity> 
+          
+        <activity android:name="com.google.ads.AdActivity"/>
+
+        <activity android:name="com.paypal.android.MEP.PayPalActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:configChanges="keyboardHidden|orientation" />        
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".SellCaptureImageForm"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>           
+        <activity
+            android:label="@string/app_name"
+            android:name=".SellSubmitForm"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>        
+        <activity
+            android:label="@string/app_name"
+            android:name=".CaptureImage"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ProductList"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>                    
+        <activity
+            android:label="@string/app_name"
+            android:name=".PocketTrader"
+             android:screenOrientation="portrait"
+             android:clearTaskOnLaunch = "true"
+             android:finishOnTaskLaunch = "true" >
+            <intent-filter >
+              
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable"
+             android:value="com.techFist.sellMyStuff.LocationProvider.SearchActivity" />            
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".ProductSearchForm"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+             
+            </intent-filter>
+        </activity>   
+
+        <activity
+            android:label="@string/app_name"
+            android:name=".LoginScreen" 
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch = "true"
+            android:finishOnTaskLaunch = "true"           
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />                  
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:label="@string/app_name"
+            android:name=".SecureLoginScreen"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>        
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".UserRegistration"
+             android:screenOrientation="portrait" >
+            <intent-filter >
+            </intent-filter>
+        </activity>           
+        <activity android:label="@string/app_name"
+            android:name=".ProductDetailScreen"
+             android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>            
+            
+        </activity>     
+        <activity android:name="com.techFist.sellMyStuff.LocationProvider.SearchActivity"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait">
+          <intent-filter>
+            <action android:name="android.intent.action.SEARCH" />
+          </intent-filter>
+          <meta-data android:name="android.app.searchable"
+                   android:resource="@xml/searchable"/>
+        </activity>
+        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.AccountScreen" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>        
+         <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.MyProductScreen" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>         
+         <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.MyProductListScreen" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity> 
+          <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.MyProfileScreen" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>  
+        <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.MySavedProductList" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AllProducts.AllProducts" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.AccountManager.MySavedProductScreen" 
+            android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>               
+        <activity
+            android:label="@string/app_name"
+            android:name="com.techFist.sellMyStuff.Commons.ReadMessageActivity" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+            </intent-filter>
+        </activity>
+        
+        
+        <service android:name=".Services.ProductsService"></service>
+        <service android:name=".Services.LoginService"></service>
+        <service android:name=".Services.ImageService"></service>
+        <service android:name="com.techFist.sellMyStuff.Services.ImageUploaderService"></service>
+      <receiver android:name="com.techFist.sellMyStuff.Commons.NotificationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+          <!-- Receive the actual message -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+              <category android:name="com.techFist.sellMyStuff" />
+          </intent-filter>
+          <!-- Receive the registration id -->
+          <intent-filter>
+              <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+              <category android:name="com.techFist.sellMyStuff" />
+          </intent-filter>
+      </receiver>
+      <provider  android:name="com.techFist.sellMyStuff.LocationProvider.LocationProvider" android:authorities="com.techFist.sellMyStuff.LocationProvider.LocationProvider" />        
+      
+      </application>
+
+    
+</manifest>

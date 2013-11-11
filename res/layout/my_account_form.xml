@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_bg"
+     >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>     
+  <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:id="@+id/account_welcome_message"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   />
+ </LinearLayout>     
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>   
+ <ListView 
+     android:id="@+id/account_option_list"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:divider="@android:color/darker_gray"
+     android:dividerHeight="1dp"
+     android:choiceMode="singleChoice"
+     android:cacheColorHint="@null" />   
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>      
+ <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:text="Recent Bids"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   />
+ </LinearLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>  
+
+       
+  <LinearLayout 
+    android:id="@+id/account_progressGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/left_margin"
+    android:layout_marginRight="@dimen/right_margin">
+    <ProgressBar
+       android:id="@+id/account_progress_bar"
+       android:layout_gravity="center_horizontal"
+       android:keepScreenOn="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <ImageView 
+       android:id="@+id/account_indicator"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+  
+       />
+        <TextView 
+        android:id="@+id/account_no_bid_found"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_bid_found"
+        android:gravity="center"/>
+      
+  </LinearLayout> 
+     
+  <ListView 
+     android:id="@+id/account_bidList"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:divider="@android:color/darker_gray"
+     android:dividerHeight="1dp"
+     android:choiceMode="singleChoice"
+     android:cacheColorHint="@null" />      
+ 
+ 
+</LinearLayout>

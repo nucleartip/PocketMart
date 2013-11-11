@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingBottom="@dimen/form_margin_5dp"
+    android:paddingTop="@dimen/form_margin_5dp"
+    >
+  
+  <ImageView 
+    android:id="@+id/product_list_image"
+    android:layout_weight=".3"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:maxWidth="48dp"
+    android:maxHeight="48dp"
+    android:layout_gravity="center"
+    android:scaleType="fitXY"
+    android:src="@drawable/image_temp"
+    android:paddingLeft="10dp"
+    
+    /> 
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_weight=".6"
+     android:gravity="left"
+     android:orientation="vertical"
+     android:layout_gravity="center_vertical"
+     android:paddingLeft="20dp"
+  >   
+    
+    <TextView 
+      android:id="@+id/product_list_title"  
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      android:textColor="@color/quote"
+      android:clickable="false"
+      /> 
+  
+    <LinearLayout 
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+      >
+    <TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      android:gravity="center_vertical"
+      android:text="Price: "
+      android:textSize="12sp"
+      android:textStyle="italic"
+      android:textColor="@color/posted_by"
+    />
+    <ImageView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/currency_sign_rupee"
+      android:scaleType="center"
+      android:paddingLeft="5dp"
+      android:contentDescription="Price : "/>    
+          
+    <TextView 
+      android:id="@+id/product_list_price"
+      android:layout_width="fill_parent"
+      android:textColor="@color/seagreen"
+      android:layout_height="fill_parent"
+      android:gravity="center_vertical"
+      android:textSize="12sp"
+      android:textStyle="italic"
+      android:paddingLeft="5dp"
+    />
+            
+    </LinearLayout>
+     <TextView 
+      android:id="@+id/product_list_date"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="left"
+      android:textSize="12sp"
+      android:textStyle="italic"
+      android:textColor="@color/posted_date"
+    />
+    </LinearLayout>
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:layout_weight=".1"
+      android:layout_height="fill_parent"
+       android:gravity="center_vertical"> 
+  <ImageView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/arrow_list_cell"
+    /></LinearLayout> 
+
+</LinearLayout>

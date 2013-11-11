@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+   <string name="app_version">1.0</string>
+   <string name="app_info">Pocket Trader is free to all E-Commerce application, feel free to post any Bugs/Suggestion to dev.techfist@gmail.com</string> 
+   <string name="back_end">http://sms-techfist.appspot.com</string>
+   
+   <!-- Setting String -->
+   <string name="setting_notification">Do you want to register for Push Notification</string>
+   <string name="setting_facebook">Do you want us to Post the deal in Facebook</string>
+   <string name="setting_promotion">Do you want to receive emails about Exciting new Deals and Promotions.</string>
+   <string name="setting_app_detail">This is a free version which is supported by ads, Data hosting is expensive kindly help us by Donating or Buying full version with more exciting Options. Pocket Trader v1.0</string>
+   <string name="setting_donate">Donate</string>
+   <string name="setting_go_back">Press back to return to home screen</string>
+   <!-- Product String -->
+   <string name="welcome_message">Welcome,</string>
+   <string name="welcome_para">Please tell us your location, you can change your location by tapping in locate or by touching address box</string> 
+   <string name="search_hint">Search Location</string>
+   <string name="filter_prompt">Select Freshness</string>
+   <string name="location_prompt">Select Location</string>
+   <!-- Google Map related -->
+        <string name="map_key">0jgOZVDZjQmvWey5GBcHHq91g3zNdLPjsF1KDGQ</string>
+   <!-- Google Map End -->
+    <!-- String Message -->
+    <string name="error_msg">Recovered from unexpected error,sent logs to admin for review</string>
+    <string name="fill_address">Select you location from search box</string>
+    <string name="finding_location">Determining location</string>
+    <string name="started_using">Just Started Using Pocket Trader for Android</string>
+    <string name="valid_login_msg">Either email or password is wrong</string>
+    <string name="valid_pswd">Password do not match</string>
+    <string name="valid_email">Email not correct</string>  
+    <string name="valid_missing_field">Either City/Phone/Name is missing</string> 
+    <string name="valid_process">Unable to Process.</string>
+    <!-- Custom Dialogs Messages --> 
+    <string name="no_products_yet">You have not posted any products yet</string>
+    <string name="no_saved_product_yet">You have not saved any products yet</string>
+    <string name="no_products_found">No Products Found</string>
+    <string name="product_deleted">Your product has been deleted</string>
+    <string name="datastore_error">Oops this is embarassing, error occured during processing data please try again</string>
+    <string name="network_error">Network communication error, Please check if you connected to a active network</string>
+    <string name="bid_post_error">Oops,We experienced problem in saving your bid please retry</string>
+    <string name="saving_data_error">Oops,We experienced problem in saving your data please retry</string>
+    <string name="unknown_error">Oops,a unkonwn error occured</string>
+    <string name="working">Working..</string>
+    <string name="wait">Please Wait</string>
+    <string name="no_location_provider">No Location Setting Enabled,Please Enable GPS/Network so that we can determine your address</string>   
+    <string name="no_location_provider_login">No Location Setting Enabled,Please Enable GPS/Network, It Helps us for Search Indexing(Note: We never store or distribute your location, without your permission)</string>   
+    
+    <string name="alert_ok_msg">Okay</string>
+    <string name="alert_cancel_msg">Cancel</string>
+    <string name="alert_exit_msg">Exit</string>
+    <string name="alert_setting_msg">Settings</string>  
+    <string name="alert_location_err">Oops, Your location cannot be determined..</string> 
+    <string name="alert_later_msg">Later</string> 
+    
+    <string name="criteria_city">No Matching Products found in your City with specified criteria.Try Selecting different Criteria</string>
+    <string name="criteria_state">No Matching Products found in your State with specified criteria.Try Selecting different Criteria</string>
+    <string name="criteria_nearby">No Matching Products found Nearby with specified criteria.Try Selecting different Criteria</string>
+    <string name="criteria_everything">No products found with specified criteria, you can be the first one to put on Sale</string>
+    <string name="reply_message_hint">Write a reply</string>   
+    <!-- End --> 
+   <!-- User Registration -->
+   <string name="secure_login">Secure login</string>
+   <string name="register_user_name">First Name</string>
+   <string name="register_user_last_name">Last Name</string>
+   <string name="register_user_email">Email ID</string>
+   <string name="register_user_city">city</string>
+   <string name="register_user_confirm_password">Confirm Password</string>
+   <string name="register_user_password">Password</string>  
+   <string name="register">Register</string> 
+   <string name="login">Login</string>
+   <string name="already_registered">Already Registered</string>
+   <string name="forgot_password">Forgot Password</string>
+   <string name="user_registration">User Registration</string>
+   <string name="phone_option">Do you wish to get contacted via Phone.</string>
+   <!-- Product String --> 
+   <string name="sign_in">Sign In</string>
+   <string name="skip">Skip</string>
+   <string name="edit_profile">Edit Profile</string>
+   <string name="user_phone">Phone Number</string>
+   <string name="edit">Edit</string>
+   <string name="cancel">Cancel</string>
+    <string name="no_bid_found">Loading Bid\'s</string> 
+    <string name="no_msg_found">Loading Msg\'s</string>    
+    <string name="my_product_remove">Remove</string>
+    <string name="my_product_bid">Bid\'s on Product</string>
+    <string name="hello">Sell Your Stuff !!</string>
+    <string name="app_name">Pocket Assitance</string>
+    <string name="buy">Buy</string>
+	<string name="sell">Sell</string>
+	<string name="account">My Account</string>
+	<string name="deal">Hot Deals</string>
+    <string name="button_search">Search</string>
+    <string name="exit_aplication">Are you sure, you want to quit the Application !!</string>
+    <string name="search_criteria">What\'s You Lookin</string>
+    <string name="product_detail">Product Detail</string>
+	<!-- Product String Ends -->
+	
+	<!-- Sell Stuff From -->
+	<string name="upload_photo">Upload Image</string>
+	<string name="reset">Reset</string>
+	<string name="validation_message">Please fill in all detail, it helps us publishing your product effectively</string>
+	<string name="sell_stuff_welcome">Let us Know about Product</string>
+	<string name="capture_image_message">Capture Image</string>
+	<string name="capture_image_para">You can upload a Picture of your product, Products with picture increases advantage of getting sold</string>
+    <string name="proceed_sell">Get Started</string>
+    <string name="proceed_next">Proceed</string>
+    <string name="sell_name">Product Name</string>
+    <string name="sell_item_name">Product Name</string>
+	<string name="Sell_Location_Hint">My Location(Press Find for AutoFill)</string>	
+	<string name="Sell_Product_Price_Hint">Expected price</string>
+	<string name="Sell_Product_Description_Hint">Something about product</string>
+	<string name="Sell_Price">Price :</string>	
+	<string name="Sell_Description">Description :</string>	   
+	<string name="Sell_Item_Category">Select Category :</string>
+	<string name="Sell_Item_Type">Select Item :</string>   
+	<string name="capture_image">Capture</string>
+	<string name="select_image">Pick Image</string>
+	<string name="submit_sell">Submit Deal</string>
+	<string name="review_sell">Review Deal</string>
+	<string name="my_location">My Location</string>
+	<string name="location_para">Sarjapur Road, Bangalore, India</string>
+	<string name="upload_image">Upload</string>
+	<string name="start_selling">Enter your location</string>
+    <!-- Sell From Ends -->
+    
+   <!-- Buy Stuff Form -->	    
+	<string name="current_location">My Location</string>
+	<string name="Buy_Location_Hint">Location am Looking In</string>	
+	<string name="item_category">I want to Buy</string>
+	<string name="item_type">Which is</string>
+	<string name="price_range">My Budget is</string>
+   <!-- Buy Stuff From Ends -->
+   <!-- Application Menu -->
+	<string name="app_menu1">Logout</string>
+	<string name="app_menu2">Settings</string>
+	<string name="app_menu3">About App</string>   
+        
+   <!-- Context Menu for Map Screen --> 
+	<string name="map_menu_zoom_in">In(+)</string>
+	<string name="map_menu_zoom_out">Out(-)</string>
+	<string name="map_menu_set_satellite">Satellite</string>
+	<string name="map_menu_set_street">Street View</string>
+	<string name="map_menu_set_traffic">Traffic</string>  
+	<string name="map_menu_show_list">Stuff\'s List</string>	      
+  <!-- Context Menu Ends -->      
+	
+  <!-- Product Category String Array -->	
+  <string-array name="freshness_filter">
+      <item>This Week</item>
+      <item>Posted Today</item>  
+      <item>Last 15 Days</item>          
+      <item>Last 30 Days</item>
+      <item>Does\'nt Matter</item>
+  </string-array>
+    <string-array name="sorting_list">
+        <item>In My City</item>
+        <item>Entire State</item>
+        <item>Nearby Me</item>
+        <item>Everywhere</item>
+    </string-array>
+    <string-array name="country_list">
+        <item>India</item>
+    </string-array>
+    <string-array name="state_list">
+        <item>Andra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>               
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujrat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+
+        <item>Kerela</item>
+        <item>Madya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>   
+        
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item> 
+        <item>Uttar Pradesh</item>    
+        <item>West Bengal</item>   
+        
+    </string-array>
+    
+    
+    <string-array name="my_account_options">
+        <item>My Products</item>
+        <item>Saved Products</item>
+        <item>My Profile</item>
+    </string-array>
+  	<string-array name="application">
+	   <item >Sell a Product</item>  
+	   <item >Buy a Product</item>
+	   <item >All Products</item>
+	   <item >Hot Deals - (Coming Soon)</item>
+	   <item >My Account</item>
+	</string-array>
+	
+  	<string-array name="category">
+	   <item>Please Select Category</item>
+	   <item >Automobile</item>
+	   <item>Books and Stationery</item>
+	   <item>Beauty,Health and Cosmetics</item>
+	   <item>Baby Care</item>
+	   <item>Clothing,Accessories and Lifestyle</item>
+	   <item>Computers</item>
+	   <item >Electronics</item>  
+	   <item >House Holds</item>
+	   <item>Movies and Music</item>
+	   <item>Instruments</item>
+	   <item >Real State</item>
+	   <item>Sports</item>
+	   <item>Toys</item>    
+  	</string-array>
+  	<string-array name="menu_category">
+	   <item >Automobile</item>
+	   <item>Books and Stationery</item>
+	   <item>Beauty,Health and Cosmetics</item>
+	   <item>Baby Care</item>
+	   <item>Clothing,Accessories and Lifestyle</item>
+	   <item>Computers</item>
+	   <item >Electronics</item>  
+	   <item >House Holds</item>
+	   <item>Movies and Music</item>
+	   <item>Instruments</item>
+	   <item >Real State</item>
+	   <item>Sports</item>
+	   <item>Toys</item>    
+  	</string-array>  	
+  	<string-array name="Please_Select_Category">
+  	    <item>Please Select Type</item>
+  	</string-array>
+     
+
+    <string-array name="Automobile">
+	   <item >Please Select Type</item>	        
+	   <item >Car Accessories and Parts</item>  
+	   <item >Bike Accessories and Parts</item>
+	   <item >Earth Movers</item>
+	   <item>Other</item>
+	</string-array>
+	
+    <string-array name="Books_and_Stationery">
+	   <item >Please Select Type</item>	        
+	   <item >Academic and Professional</item>  
+	   <item >Biographies and Autobiographies</item>
+	   <item >Business Investing and Management</item>
+       <item >Children and Teens</item>  
+	   <item >Coffee Table</item>
+	   <item >College Text and Reference</item>
+	   <item >Comics and Graphic Novels</item>  
+	   <item >Computers and Internet</item>
+	   <item >Dictionaries</item>	   	   	   
+	   <item >Entrance Exams Preparation</item>  
+	   <item >Literature and Fiction</item>
+	   <item >Religion and Spirituality</item>
+	   <item>Other</item>
+	</string-array>		
+		
+    
+    <string-array name="BeautyHealth_and_Cosmetics">
+	   <item >Please Select Type</item>	        
+	   <item >Makeup</item>  
+	   <item >Personal Care Appliances</item>
+	   <item >Body and Skin Care</item>
+       <item >Fragrances</item>  
+	   <item >Mens Grooming</item>
+	   <item >Hair Care</item>
+	   <item >Bath and Spa</item>  
+	   <item >Beauty Accessories</item>
+	   <item >Combos and Kits</item>	   	   	   
+	   <item >Health Care Devices</item>  
+	   <item>Other</item>
+	</string-array>	
+	
+     <string-array name="Baby_Care">
+	   <item >Please Select Type</item>	        
+	   <item >Diapering and Potty Training</item>  
+	   <item >Feeding and Nursing</item>
+	   <item >Bath Care</item>
+       <item >Grooming</item>  
+	   <item >Maternity Care</item>
+	   <item >Health and Safety</item>
+	   <item >Baby Gear</item>  
+	   <item >Baby Bedding</item>
+	   <item>Other</item>
+	</string-array>	   
+
+    <string-array name="ClothingAccessories_and_Lifestyle">
+	   <item >Please Select Type</item>	        
+	   <item >Watches</item>  
+	   <item >Shoes</item>
+	   <item >Bags,Belts and Luggage</item>
+       <item >Jewellery</item>  
+	   <item >Accessories</item>
+	   <item>Other</item>
+	</string-array>
+ 	<string-array name="Computers">
+	   <item >Please Select Type</item>
+	   <item>Laptops</item>
+	   <item>Desktpos</item>
+	   <item>Laptop Accessories</item>	    
+	   <item>Desktop Accessories</item>
+	   <item>Pheripherals</item> 
+	   <item>Tablets</item>
+	   <item>Computer Components</item> 
+	   <item>Other</item>
+	</string-array>   
+	 
+	<string-array name="Electronics">
+	   <item >Please Select Type</item>
+	   <item>Camera Optics and Accessories</item>
+	   <item>Consumer Electronics</item>
+	   <item>Home Theater</item>	    
+	   <item>Gaming Consoles and Accessories</item>
+	   <item>Memory Card,Pendrive and HDD</item> 
+	   <item>Mobile Accessories</item>
+	   <item>Mobile Phones</item> 
+	   <item>Music Players,Mp3s and Ipods</item>
+	   <item>Pre Owned Games</item>
+	   <item>Television</item>
+	   <item>Refrigerators</item>
+	   <item>Sports and Fitness</item>
+	   <item>Video Players</item>
+	   <item>Other</item>
+	</string-array>  
+  
+    <string-array name="House_Holds">
+	   <item>Please Select Type</item>	        
+	   <item>Utensils</item>  
+	   <item>Crockery</item>
+	   <item>Furnitures</item>
+	   <item>Furnishings</item>
+	   <item>Curtains</item>
+	   <item>Home Decor</item>
+       <item>Home Appliances</item>	
+       <item>House Keeping</item>   
+	   <item>Kitchen Electronics</item>
+	   <item>Other</item>
+	</string-array> 
+    <string-array name="Real_State">
+	   <item >Please Select Type</item>	        
+	   <item >Rent a Property</item>  
+	   <item >Buy a Property</item>
+	   <item >Sell Property</item>
+	   <item>Other</item>
+	</string-array> 
+	
+    <string-array name="Movies_and_Music">
+	   <item >Please Select Type</item>	        
+	   <item >Movies</item>  
+	   <item >Music</item>
+	   <item>Other</item>
+	</string-array>     
+    <string-array name="Instruments">
+	   <item >Please Select Type</item>	 
+       <item>Guitar</item>
+       <item>Music Keyboards and Synthesizers</item>
+       <item>Amplifiers</item>
+	   <item >Accessories and Parts</item>	        
+	   <item >Recording and Studio Equipment</item>  
+	   <item >Brass Instruments</item>
+       <item>Drums and Percussion</item>
+       <item>Electronic Equipment</item>
+       <item>Harmonium</item>
+	   <item >Instruction Books, CDs, Videos</item>	        
+	   <item >Stringed Instruments</item>  
+	   <item >Wind Instruments</item>	   
+	   <item>Other</item>       
+    </string-array>
+
+    <string-array name="Sports">
+	   <item >Please Select Type</item>	 
+       <item>Sports Equipment</item>
+       <item>Sports Accessories</item>       
+  	   <item>Other</item>       
+    </string-array>
+    
+    <string-array name="Toys">
+	   <item >Blocks and Constructions</item>	 
+       <item>Dolls and Doll Houses</item>
+       <item>Educational Toys</item>
+       <item>Infant and Toddler Toys</item>
+	   <item >Musical Toys</item>	        
+	   <item >Outdoor Toys</item>  
+	   <item >Puzzles and Board Games</item>
+       <item>Remote Control Toys</item>
+       <item>Role Play Toys</item>
+       <item>Spinning and Press-n-Launch Toys</item>
+	   <item >Stuffed Toys</item>	        
+	   <item >Vehicle and Action Toys</item>  
+   
+	   <item>Other</item>       
+    </string-array>   
+    
+    <string-array name="callmenu">
+        <item>Message</item>
+        <item>Mail</item>
+        <item>Call</item>
+        <item>Delete</item>                        
+    </string-array>
+    <string-array name="noncallmenu">
+        <item>Message</item>
+        <item>Mail</item>
+        <item>Delete</item>                        
+    </string-array>
+        
+	<!-- Pull to refresh list -->
+    <string name="pull_to_refresh_pull_label">Pull to refresh...</string>
+    <string name="pull_to_refresh_release_label">Release to refresh...</string>
+    <string name="pull_to_refresh_refreshing_label">Loading...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    
+	<!-- Product category Array Ends --> 
+	<!-- Google Maps -->
+	<string name="map_key_debug">0jgOZVDZjQmvWey5GBcHHq91g3zNdLPjsF1KDGQ</string>
+	<string name="map_key_app">0jgOZVDZjQmvWey5GBcHHq91g3zNdLPjsF1KDGQ</string>
+			     
+</resources>

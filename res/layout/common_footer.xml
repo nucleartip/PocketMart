@@ -1,0 +1,42 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads">
+
+<FrameLayout 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"    
+  android:minHeight="50dp"
+  android:background="@drawable/app_header_new_second"  >
+  
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:layout_gravity="center_vertical"> 
+    <TextView
+        android:id="@+id/footerTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/primary_text_dark"
+        android:text="Copyright TechFist Solutions, 2012"
+        android:gravity="center"
+        android:layout_weight="1"
+        /> 
+</LinearLayout>
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical">     
+  <com.google.ads.AdView 
+      android:id="@+id/adView"
+      android:layout_width="wrap_content"
+      android:layout_height="fill_parent"
+      ads:adUnitId="a1505f0b20e6c42"
+      ads:adSize="BANNER"
+      ads:testDevices="TEST_EMULATOR,00196cdd64059e"
+      ads:loadAdOnCreate="true"/>
+</LinearLayout>
+   
+
+</FrameLayout>    
+</merge>    

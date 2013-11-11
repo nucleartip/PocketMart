@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_bg">
+    
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout> 
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:text="@string/user_registration"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="right"> 
+    <Button
+       android:id="@+id/register_signin_user"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/sign_in"
+       android:textColor="@drawable/button_fore_color" /> </LinearLayout>
+          
+ </LinearLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout> 
+ <ScrollView
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"> 
+  
+ <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+ >
+ 
+
+    <EditText
+        android:id="@+id/register_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_user_name"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+        android:layout_marginTop="@dimen/top_margin_form"
+    />
+    
+    <EditText
+        android:id="@+id/register_user_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_user_last_name"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+    />
+    
+    <EditText
+        android:id="@+id/register_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/register_user_email"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+    />
+     
+    <EditText
+        android:id="@+id/register_user_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/user_phone"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+    />     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+        >
+    <EditText
+        android:id="@+id/register_user_city"
+        android:layout_width="wrap_content"
+        android:layout_weight=".4"
+        android:layout_height="match_parent"
+        android:hint="@string/register_user_city"
+
+    />        
+    <Spinner 
+        android:id="@+id/register_user_state"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight=".6"
+     />
+    </LinearLayout> 
+    <Spinner 
+        android:id="@+id/register_user_country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"        
+     />    
+
+        
+     
+    <EditText
+        android:id="@+id/register_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/register_user_password"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+    />     
+    <EditText
+        android:id="@+id/register_user_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/register_user_confirm_password"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+    />      
+    <CheckBox
+        android:id="@+id/register_phone_option"
+        android:checked="false"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_option">
+        
+    </CheckBox>
+    <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="bottom"
+      android:background="@drawable/horizontal_line">
+   </LinearLayout> 
+    <LinearLayout
+
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+       
+    <Button
+       android:id="@+id/register_user"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:layout_marginRight="@dimen/form_margin_20dp"
+       android:layout_marginLeft="@dimen/form_margin_20dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/register"
+       android:textColor="@drawable/button_fore_color" />  
+  </LinearLayout>      
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:background="@drawable/horizontal_line">
+  </LinearLayout>
+ <LinearLayout
+     android:layout_gravity="bottom"
+     android:gravity="bottom"  
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">    
+     <include layout="@layout/common_footer_no_ad" />
+  </LinearLayout>  
+  </LinearLayout></ScrollView> <!-- Main Form  -->      
+
+    
+    
+</LinearLayout> <!-- First LinearLayout -->
+<!-- Second Linear Layout -->
+<LinearLayout
+     
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:gravity="bottom">
+
+ <LinearLayout
+     android:layout_gravity="bottom"
+     android:gravity="bottom"  
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">    
+     <include layout="@layout/common_footer" />
+  </LinearLayout>
+  
+</LinearLayout>
+
+
+</FrameLayout>
+     
+    

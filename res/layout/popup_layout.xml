@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_group"
+    android:layout_width="fill_parent"
+    android:layout_height="300dp"
+    android:minHeight="250dp"
+    android:maxHeight= "300dp"
+    android:minWidth="300dp"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical"
+    android:gravity="center_vertical" 
+    android:layout_marginBottom="@dimen/form_margin_10dp">
+
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/messages_list"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray"
+        android:cacheColorHint="@null"    
+        android:background="@null">
+        
+    </ListView>        
+        
+  <LinearLayout 
+    android:id="@+id/msg_progressGroup"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/left_margin"
+    android:layout_marginRight="@dimen/right_margin">
+    <ProgressBar
+       android:id="@+id/msg_progress_bar"
+       android:layout_gravity="center_horizontal"
+       android:keepScreenOn="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    <ImageView 
+       android:id="@+id/msg_indicator"
+       android:layout_gravity="center_horizontal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+  
+       />
+        <TextView 
+        android:id="@+id/msg_no_msg_found"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_msg_found"
+        android:gravity="center"/>
+      
+  </LinearLayout>
+  
+  
+        
+
+
+
+</LinearLayout>

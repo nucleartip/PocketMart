@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_bg"
+     >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>  
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="My Messages"
+        android:gravity="left"
+        android:paddingTop="@dimen/form_margin_5dp"
+        android:paddingBottom="@dimen/form_margin_5dp"
+        android:paddingLeft="@dimen/form_margin_5dp"
+        android:background="@drawable/app_header_new_second"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>  
+  
+  <com.techFist.sellMyStuff.Commons.PullToRereshList
+      android:id="@+id/my_messages_list"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      />
+  
+</LinearLayout>

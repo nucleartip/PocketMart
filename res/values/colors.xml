@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    <color name="titlebackgroundcolor">#3232CD</color>
+    <color name="titletextcolor">#FFFF00</color>
+    <color name="pricecolor">#7A5DC7</color>
+    <color name="seagreen">#387C44</color>
+    <color name="product_name">#686868</color>
+    <color name="posted_by">#080000</color>
+    <color name="posted_date">#080000</color>
+    <color name="quote">#484848</color>
+</resources>

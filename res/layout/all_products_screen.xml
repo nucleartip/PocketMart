@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+        android:background="@drawable/common_bg">
+    <LinearLayout 
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginTop="@dimen/form_margin_10dp"
+        android:layout_marginBottom="@dimen/form_margin_10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+        <Spinner 
+         android:id="@+id/freshness_filter"
+         android:layout_width="fill_parent"
+         android:prompt="@string/filter_prompt"
+         android:layout_height="wrap_content"
+         
+        
+        />               
+        <Spinner 
+         android:id="@+id/sort_option"
+         android:prompt="@string/location_prompt"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        
+        />       
+        
+    </LinearLayout>  
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>      
+    <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:id="@+id/list_group" 
+       android:orientation="vertical" >
+      
+        <ListView
+          android:id="@+id/product_list_view"
+          android:cacheColorHint="@null"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:focusableInTouchMode="false"
+          android:focusable="false"
+          android:divider="@android:color/darker_gray"
+          android:dividerHeight="1dp"
+          android:choiceMode="singleChoice"
+          android:longClickable="false" />       
+    </LinearLayout>
+    
+    <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:orientation="vertical" 
+      android:id="@+id/map_group">
+       <com.google.android.maps.MapView
+          android:id="@+id/product_map_view"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:apiKey="@string/map_key_debug"/> 
+
+    </FrameLayout>       
+    
+</LinearLayout>

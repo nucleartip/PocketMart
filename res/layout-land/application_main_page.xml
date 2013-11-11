@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/common_bg"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:text="What do you Want"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   /></LinearLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>    
+  <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="horizontal" >
+   <ListView
+    android:id="@+id/apllication_menu_list"
+    android:layout_width="0dp"
+    android:layout_height="fill_parent"
+    android:choiceMode="singleChoice"
+    android:dividerHeight="1dp"
+    android:layout_weight=".7"
+    android:divider="@android:color/darker_gray"
+    android:cacheColorHint="@null"    
+    android:background="@null"
+    android:minHeight="250dp">
+       
+   </ListView>    
+   <ImageSwitcher
+      android:id="@+id/BannerRoller"
+      android:layout_width="0dp"
+      android:layout_weight=".3"
+      android:layout_height="fill_parent"
+      android:inAnimation="@android:anim/slide_in_left"
+      android:outAnimation="@android:anim/slide_out_right" /> 
+  </LinearLayout>       
+
+  
+ </LinearLayout>

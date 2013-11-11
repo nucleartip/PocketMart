@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:background="@drawable/common_bg">
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>     
+ <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:text="@string/search_criteria"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="right">
+       <Button
+        android:id="@+id/proceed_search"
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/proceed_sell"
+       android:textColor="@drawable/button_fore_color" />
+   </LinearLayout>   
+ </LinearLayout>
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>  
+ 
+ <ScrollView 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"> 
+	        
+  <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">	
+
+    <Spinner
+        android:id="@+id/search_item_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+        android:layout_marginTop="@dimen/bottom_margin_form"        
+     />
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>
+    <Spinner
+        android:id="@+id/search_item_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginBottom="@dimen/bottom_margin_form"
+        android:layout_marginTop="@dimen/bottom_margin_form"         
+     />
+     
+  </LinearLayout>  
+
+</ScrollView> 
+ <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"  
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">   
+     <include layout="@layout/common_footer" />      
+    
+</LinearLayout>
+</LinearLayout>

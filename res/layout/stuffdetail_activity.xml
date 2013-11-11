@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/stuff_detail_activity_background">
+
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+       <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/form_padding_left"
+            android:paddingTop="@dimen/form_padding_top" >
+
+            <TextView 
+                android:id="@+id/detail_stuff_name"
+                android:text="Product Name"
+                android:gravity="left"
+                android:textSize="@dimen/product_name_size"
+                >
+                
+            </TextView>
+           <ImageView
+                android:id="@+id/detail_fav_icon"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/empty_star" />
+            
+        </TableRow>
+    </TableLayout>
+    
+    <TableLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TableRow 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/form_padding_left"
+            android:paddingTop="@dimen/form_padding_top"  >
+
+           <ImageButton
+               android:id="@+id/detail_map_icon"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="left"
+               android:scaleType="fitCenter"
+               android:src="@drawable/detail_map" />
+
+           <ImageButton
+                android:id="@+id/detail_direction_icon"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/detail_direction" />
+
+           <ImageButton
+                android:id="@+id/detail_call_icon"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/detail_call" />
+
+           <ImageButton
+                android:id="@+id/detail_mail_icon"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:scaleType="fitCenter"
+                android:src="@drawable/detail_email" />
+                             
+            
+        </TableRow>             
+        
+    </TableLayout>    
+
+</LinearLayout>

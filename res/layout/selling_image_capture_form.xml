@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/common_bg"
+     >
+  <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout>      
+ <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="left">
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="fill_parent"
+       android:text="@string/upload_photo"
+       android:textSize="16dp"
+       android:gravity="center_vertical"
+       android:textColor="@android:color/primary_text_light"
+       android:textStyle="bold"
+       android:paddingLeft="15dp"
+   />
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="right">
+       <Button
+        android:id="@+id/capture_skip_image_selling"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/skip"
+       android:textColor="@drawable/button_fore_color" />
+   </LinearLayout>   
+ </LinearLayout> 
+   <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="top"
+      android:background="@drawable/horizontal_line"
+  ></LinearLayout> 
+   <ScrollView
+	 android:layout_width="fill_parent"
+	 android:layout_height="fill_parent"> 
+   <LinearLayout 
+     android:layout_width="match_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical">
+
+   
+    <TextView 
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/capture_image_para"
+      android:textColor="@color/posted_by"
+      android:textSize="18dp"
+      android:gravity="left"
+      android:layout_marginLeft="@dimen/form_margin_10dp"
+      android:layout_marginRight="@dimen/form_margin_10dp"      
+      android:layout_marginBottom="@dimen/form_margin_10dp"
+      android:layout_marginTop="@dimen/form_margin_10dp"
+      />
+   <LinearLayout 
+      android:layout_marginBottom="@dimen/top_margin_form_detail"
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="bottom"
+      android:background="@drawable/horizontal_line"
+    ></LinearLayout>
+    
+ 
+    <Gallery 
+     android:id="@+id/capture_image_crousal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:layout_gravity="center_vertical"
+    />
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:orientation="vertical"
+     android:gravity="bottom">
+
+    <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="bottom"
+      android:background="@drawable/horizontal_line">
+   </LinearLayout>           
+ <LinearLayout
+    android:layout_gravity="bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/smokey_bg"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <Button
+       android:id="@+id/capture_image"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/capture_image"
+       android:textColor="@drawable/button_fore_color" />  
+       
+    <Button
+       android:id="@+id/select_image"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/select_image"
+       android:textColor="@drawable/button_fore_color" /> 
+           
+    <Button
+       android:id="@+id/select_image_reset"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+       android:text="@string/reset" 
+       android:textColor="@drawable/button_fore_color" />
+    
+    
+    <Button
+       android:id="@+id/capture_image_selling"
+       android:layout_width="wrap_content"
+       android:minWidth="@dimen/header_button_submit"
+       android:layout_height="fill_parent"
+       android:layout_marginBottom="2dp"
+       android:layout_marginTop="2dp"
+       android:gravity="center"
+       android:layout_gravity="center_vertical"
+        android:text="@string/upload_image" 
+       android:textColor="@drawable/button_fore_color" />
+</LinearLayout>   
+   <LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="1dp"
+      android:layout_gravity="bottom"
+      android:background="@drawable/horizontal_line"
+    ></LinearLayout>      
+    
+    
+ <LinearLayout
+     android:layout_gravity="bottom"
+     android:gravity="bottom"  
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content">    
+     <include layout="@layout/common_footer" />
+  </LinearLayout>
+</LinearLayout>
+</FrameLayout>
